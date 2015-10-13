@@ -53,6 +53,7 @@ Create a `Scrabble` class with a minimum of 8 specs. The class should have the f
     - Note that there is a greater bonus for using all seven letters. If the top score is tied between multiple words and one used all seven letters, choose the one with seven letters over the one with fewer tiles.
     - If the there are multiple words that are the same score and same length, pick the first one in supplied list.
 
+<!--
 ## Wave 2
 
 ### Primary Requirements
@@ -116,3 +117,4 @@ Beginning Tile Quantities:
 - Create a `Dictionary` class that includes a method for searching a list of words to determine if a given word is a valid word.
 - Create a `Board` class that has a matrix (array of arrays) of tile places. Check if a word can be played on a given tile place in a certain direction.
 - Include a minimum of 20 specs between the `Dictionary` and `Board` classes.
+-->
