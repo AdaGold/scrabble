@@ -4,7 +4,7 @@ Use TDD to create classes that would be used to build a scrabble game. Don't act
 
 ## Project Expectations
 
-From the project root, you should be able to execute all of your specs by just running `rspec`. All of your classes should be in their own files in `lib/`, and the entire project should be namespaced in a module called `Scrabble`.
+From the project root, you should be able to execute all of your specs by just running `rspec`. All of your classes should be in their own files in `lib/`, and the entire project should be in a module called `Scrabble`.
 
 Your spec descriptions should be meaningful and organized into `context` blocks that reflect your intent on how to use the code.
 
