@@ -43,8 +43,9 @@ Create a project structure which contains:
 |J, X                          |   8  |
 |Q, Z                          |   10 |
 
-## Breakfast
+## Wave 1
 
+### Primary Requirements
 Create a `Scrabble` class with a minimum of 8 specs. The class should have the following **class methods**:
 - `score(word)`: returns the total score value for the given word. The word is input as a string (case insensitive). The chart below shows the point value for a given letter.
 - `highest_score_from(array_of_words)`: returns **the word in the array with the highest score**.
@@ -52,8 +53,9 @@ Create a `Scrabble` class with a minimum of 8 specs. The class should have the f
     - Note that there is a greater bonus for using all seven letters. If the top score is tied between multiple words and one used all seven letters, choose the one with seven letters over the one with fewer tiles.
     - If the there are multiple words that are the same score and same length, pick the first one in supplied list.
 
-## Lunch
+## Wave 2
 
+### Primary Requirements
 Create a `Player` class with a minimum of 11 specs. The class should have the following class and instance methods:
 
 - `self.new(name)`: creates a new instance with the instance variable `name` assigned
@@ -67,8 +69,9 @@ Create a `Player` class with a minimum of 11 specs. The class should have the fo
 - `#highest_word_score`: Returns the `highest_scoring_word` score.
 
 
-## Dinner
+## Wave 3
 
+### Primary Requirements
 Create a `TileBag` class with a minimum of 5 specs. It should have the following class and instance methods:
 
 - `self.new` creates an instance with a collection of default tiles
@@ -108,7 +111,7 @@ Beginning Tile Quantities:
   - Y: 2
   - Z: 1
 
-## Dessert
+### Optional Enhancements
 
 - Create a `Dictionary` class that includes a method for searching a list of words to determine if a given word is a valid word.
 - Create a `Board` class that has a matrix (array of arrays) of tile places. Check if a word can be played on a given tile place in a certain direction.
