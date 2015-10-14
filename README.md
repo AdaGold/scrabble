@@ -43,6 +43,7 @@ Create a project structure which contains:
 |J, X                          |   8  |
 |Q, Z                          |   10 |
 
+
 ## Wave 1
 
 ### Primary Requirements
@@ -53,7 +54,7 @@ Create a `Scrabble` class with a minimum of 8 specs. The class should have the f
     - Note that there is a bonus (50 points) for using all seven letters. If the top score is tied between multiple words and one used all seven letters, choose the one with seven letters over the one with fewer tiles.
     - If the there are multiple words that are the same score and same length, pick the first one in supplied list.
 
-<!--
+
 ## Wave 2
 
 ### Primary Requirements
@@ -70,6 +71,7 @@ Create a `Player` class with a minimum of 11 specs. The class should have the fo
 - `#highest_word_score`: Returns the `highest_scoring_word` score.
 
 
+<!--
 ## Wave 3
 
 ### Primary Requirements
