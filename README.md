@@ -76,8 +76,8 @@ Create a `Player` class with a minimum of 11 specs. The class should have the fo
 ### Primary Requirements
 Create a `TileBag` class with a minimum of 5 specs. It should have the following class and instance methods:
 
-- `self.new` creates an instance with a collection of default tiles
-- `#draw_tiles(n)` returns n number of random tiles, removes the tiles from the default set.
+- `#initialize` Called when you use `TileBag.new`, sets up an instance with a collection of default tiles
+- `#draw_tiles(num)` returns `num` number of random tiles, removes the tiles from the default set.
 - `#tiles_remaining` returns the number of tiles remaining in the bag
 
 Create specs for (minimum 2) and add to the `Player` class the following instance methods:
