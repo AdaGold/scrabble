@@ -20,7 +20,12 @@ Utilize good pair programming practices. Refer back to the articles from the [Ag
 1. Add the second individual as a collaborator to the forked repo.
 1. Both individuals will clone the forked repo: `$ git clone [YOUR FORKED REPO URL]`
 1. Both individuals `cd` into the dir create:d `$ cd scrabble`
-1. Both individuals install needed tools via Terminal: `$ gem install simplecov`
+1. Both individuals install needed tools via Terminal: 
+
+    ```bash
+    $ gem install simplecov`
+    $ gem install minitest-reporters
+    ```
 
 ### Requirements
 #### Pair Plan
