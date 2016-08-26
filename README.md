@@ -1,8 +1,14 @@
 # Scrabble
 Use __Test Driven Development (TDD)__ to create a collection of Ruby classes that would provide the foundation for creating a scrabble game. Don't actually build an interactive game (yet)!
 
+### Learning Goals
+- Use __Test Driven Development (TDD)__ to write tests and code in parallel
+- Create class and instance methods according to requirements
+- Utilize Single Responsibility Principle to reduce code dependencies
+- Utilize composition between classes, where appropriate
+
 ## Project Expectations
-From the project root, you should be able to execute all of your specs by running `rake`. Each Ruby class should be in its own file in `lib/`, and the entire project should be in a `module` called `Scrabble`. You will need to research using `require`, `require_relative`, `include` and/or `extend` to tell Ruby how to work with classes in multiple files.
+From the project root, you should be able to execute all of your specs by running `rake`. Each Ruby class should be in its own file in `lib/`, and the entire project should be in a `module` called `Scrabble`. You will need to use `require`, `require_relative`, `include` and/or `extend` to tell Ruby how to work with classes in multiple files.
 
 ### Tests
 We will use [minitest](https://github.com/seattlerb/minitest) for this project. This is the same test framework that we've used for the Weekend Warrior exercises. However, unlike Weekend Warrior, we will write our own tests using [minitest specs format](https://github.com/seattlerb/minitest#specs). Your spec descriptions should be meaningful and organized into `describe` blocks that reflect your intent on how to use the code.
@@ -10,7 +16,7 @@ We will use [minitest](https://github.com/seattlerb/minitest) for this project. 
 Do not move onto a new tier of requirements until the minimum requirements of the previous tier are complete and your specs are green across the board. Use __TDD__ to drive your development and document your edge cases.
 
 ### Pair Programming
-Utilize good pair programming practices. Refer back to the articles from the [Agile Alliance](http://guide.agilealliance.org/guide/pairing.html) and the [Agile Institute](http://powersoftwo.agileinstitute.com/2015/02/benefits-of-pair-programming-revisited.html) for best practices. Switch _driver_ and _navigator_ roles often. When there is uncertainity or confusion, step away from the keyboard and discuss, plan, and document on paper or whiteboard before continuing.
+Utilize good pair programming practices. Refer to articles from the [Agile Alliance](http://guide.agilealliance.org/guide/pairing.html) and the [Agile Institute](http://powersoftwo.agileinstitute.com/2015/02/benefits-of-pair-programming-revisited.html) if you need a refresher for some best practices. Switch _driver_ and _navigator_ roles often. When there is uncertainity or confusion, step away from the keyboard and discuss, plan, and document on paper or whiteboard before continuing.
 
 ## Baseline
 ### Setup
@@ -28,7 +34,7 @@ First, come up with a "plan of action" for how you want to work as a pair. Discu
 
 #### Implementation
 - Create a `Scrabble` module at the project root.
-- Create a `Scrabble::Scoring` class which contains some sort of data structure to store the **individual letter scores** listed below.
+- Create a `Scrabble::Scoring` **class** which contains some sort of data structure to store the **individual letter scores** listed below.
 - Create a Spec file which corresponds to your `Scrabble::Scoring` class. This spec should contain one __red__ test as a starting point (this test can be modified as your get further through the requirements).
 - Be able to execute your one test using `rake` from the project root.
 
