@@ -62,7 +62,7 @@ Create a `Scrabble::Scoring` class with a __minimum of 8 specs__. The class shou
 
 ## Wave 2
 ### Primary Requirements
-Create a `Scrabble::Player` class with a __minimum of 11 specs__. The only required paramter for instances of the class is the player's `name`. Instances of the class should repond to the following messages:
+Create a `Scrabble::Player` class with a __minimum of 11 specs__. The only required parameter for instances of the class is the player's `name`. Instances of the class should repond to the following messages:
 
 - `#name`: returns the value of the `@name` instance variable
 - `#plays`: returns an Array of the words played by the player
