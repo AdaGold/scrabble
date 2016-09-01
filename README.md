@@ -80,7 +80,7 @@ Create a `Scrabble::Player` class with a __minimum of 11 specs__. The only requi
 Create a `Scrabble::TileBag` class with a __minimum of 5 specs__. It should have the following class and instance methods:
 
 - `#initialize` Called when you use `TileBag.new`, sets up an instance with a collection of default tiles
-- `#draw_tiles(num)` returns `num` number of random tiles, removes the tiles from the default set.
+- `#draw_tiles(num)` returns a collection of random tiles, removes the tiles from the default set.
 - `#tiles_remaining` returns the number of tiles remaining in the bag
 
 ##### Initial Distribution of Letters
