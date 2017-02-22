@@ -7,11 +7,13 @@ Use __Test Driven Development (TDD)__ to create a collection of Ruby classes tha
 - Utilize Single Responsibility Principle to reduce code dependencies
 - Utilize composition between classes, where appropriate
 
-## Project Expectations
+## Getting Started
+This is Level 2 pair project.
+
 From the project root, you should be able to execute all of your specs by running `rake`. Each Ruby class should be in its own file in `lib/`, and the entire project should be in a `module` called `Scrabble`. You will need to use `require`, `require_relative`, `include` and/or `extend` to tell Ruby how to work with classes in multiple files.
 
 ### Tests
-We will use [minitest](https://github.com/seattlerb/minitest) for this project. This is the same test framework that we've used for the Weekend Warrior exercises. However, unlike Weekend Warrior, we will write our own tests using [minitest specs format](https://github.com/seattlerb/minitest#specs). Your spec descriptions should be meaningful and organized into `describe` blocks that reflect your intent on how to use the code.
+We will use [minitest](https://github.com/seattlerb/minitest) for this project. This is the same test framework that we've used for your previous project. Your spec descriptions should be meaningful and organized into `describe` blocks that reflect your intent on how to use the code.
 
 Do not move onto a new tier of requirements until the minimum requirements of the previous tier are complete and your specs are green across the board. Use __TDD__ to drive your development and document your edge cases.
 
@@ -21,16 +23,15 @@ Utilize good pair programming practices. Refer to articles from the [Agile Allia
 ## Baseline
 ### Setup
 1. You'll be working with an assigned pair. High-five your pair.
-1. Choose one person to fork the project repo.
-1. Add the other person in the pair to the forked repo as a _collaborator_.
-1. Add the second individual as a collaborator to the forked repo.
+1. Choose **one person** to fork the project repo.
+1. Add the other person in the pair (who didn't fork) to the forked repo as a _collaborator_. Instructions [here](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/).
 1. Both individuals will clone the forked repo: `$ git clone [YOUR FORKED REPO URL]`
-1. Both individuals `cd` into the dir create:d `$ cd scrabble`
+1. Both individuals `cd` into the dir created.
 1. Both individuals install needed tools via Terminal: `$ gem install simplecov`
 
 ### Requirements
 #### Pair Plan
-First, come up with a "plan of action" for how you want to work as a pair. Discuss your learning style, how you prefer to recive feedback, and one team communication skill you want to improve with this experience. Second, review the requirements for Wave 1 and come up with a "plan of action" for your implementation.
+First, come up with a "plan of action" for how you want to work as a pair. Discuss your learning style, how you prefer to receive feedback, and one team communication skill you want to improve with this experience. Second, review the requirements for Wave 1 and come up with a "plan of action" for your implementation.
 
 #### Implementation
 - Create a `Scrabble` module at the project root.
@@ -53,16 +54,16 @@ First, come up with a "plan of action" for how you want to work as a pair. Discu
 ### Primary Requirements
 Create a `Scrabble::Scoring` class with a __minimum of 8 specs__. The class should have the following **class methods**:
 
-- `self.score(word)`: returns the total score value for the given word. The word is input as a string (case insensitive). The chart in the baseline requirements shows the point value for a given letter.
+- `self.score(word)`: returns the total score for the given word. The word is input as a string (case insensitive). The chart in the baseline requirements shows the point value for a given letter.
   - A seven letter word means that a player used all the tiles. Seven letter words receive a __50__ point bonus.
 - `self.highest_score_from(array_of_words)`: returns **the word in the array with the highest score**. In the case of tie, use these tiebreaking rules:
-    - It’s better to use fewer tiles, in the case of a tie, prefer the work with the fewest letters.
+    - It’s better to use fewer tiles, in the case of a tie, prefer the word with the fewest letters.
     - There is a bonus for words that are seven letters. If the top score is tied between multiple words and one used all seven letters, choose the one with seven letters over the one with fewer tiles.
     - If the there are multiple words that are the same score and same length, pick the first one in the supplied list.
 
 ## Wave 2
 ### Primary Requirements
-Create a `Scrabble::Player` class with a __minimum of 11 specs__. The only required parameter for instances of the class is the player's `name`. Instances of the class should repond to the following messages:
+Create a `Scrabble::Player` class with a __minimum of 11 specs__. The only required parameter for instances of the class is the player's `name`. Instances of the class should repond to the following messages (note, this does not necessarily mean that each of these need to be written as _new methods_):
 
 - `#name`: returns the value of the `@name` instance variable
 - `#plays`: returns an Array of the words played by the player
@@ -74,13 +75,19 @@ Create a `Scrabble::Player` class with a __minimum of 11 specs__. The only requi
 - `#highest_scoring_word`: Returns the highest scoring played word
 - `#highest_word_score`: Returns the `highest_scoring_word` score
 
+For example,
+```ruby
+player = Scrabble::Player.new("Ada")
+player.name #=> "Ada"
+```
+
 ## Wave 3
 ### Primary Requirements
 #### `TileBag`
 Create a `Scrabble::TileBag` class with a __minimum of 5 specs__. It should have the following class and instance methods:
 
-- `#initialize` Called when you use `TileBag.new`, sets up an instance with a collection of default tiles
-- `#draw_tiles(num)` returns a collection of random tiles, removes the tiles from the default set.
+- `#initialize` Should set up the instance with a collection of all default tiles
+- `#draw_tiles(num)` returns a collection of random tiles, removes the tiles from the default set
 - `#tiles_remaining` returns the number of tiles remaining in the bag
 
 ##### Initial Distribution of Letters
