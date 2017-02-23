@@ -9,7 +9,8 @@
 |   Regular Commits with meaningful commit messages 	|   	|
 |  **Scoring class**	|   	|
 |  `score` method	|   	|
-|   Uses appropriate data structure to store the alpha score	|   	|
+|   Uses appropriate data structure to store the letter score	|   	|
+|   Appropriately handles edge cases	|   	|
 |   Tests `score` edge cases (one-letter word, 7 letter word)	|   	|
 |  `highest_scoring_word` method	|   	|
 |   Appropriately handles edge cases	|   	|
