@@ -61,7 +61,7 @@ Create a `Scrabble::Scoring` class with a __minimum of 8 specs__. The class shou
     - There is a bonus for words that are seven letters. If the top score is tied between multiple words and one used all seven letters, choose the one with seven letters over the one with fewer tiles.
     - If the there are multiple words that are the same score and same length, pick the first one in the supplied list.
 
-<!--
+
 ## Wave 2
 ### Primary Requirements
 Create a `Scrabble::Player` class with a __minimum of 11 specs__. The only required parameter for instances of the class is the player's `name`. Instances of the class should repond to the following messages (note, this does not necessarily mean that each of these need to be written as _new methods_):
@@ -82,6 +82,7 @@ player = Scrabble::Player.new("Ada")
 player.name #=> "Ada"
 ```
 
+<!--
 ## Wave 3
 ### Primary Requirements
 #### `TileBag`
