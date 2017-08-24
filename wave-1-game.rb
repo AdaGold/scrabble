@@ -4,7 +4,6 @@ module Scrabble
   class Game
     def initialize
       @words = []
-
     end
 
     def play

@@ -6,7 +6,6 @@ module Scrabble
       @words = []
       @players = setup_players
       @tilebag = Tilebag.new
-
     end
 
     def play
@@ -79,14 +78,6 @@ module Scrabble
       else
         return false
       end
-    end
-
-    def get_word
-      puts "Enter a word to score:"
-      word = gets.chomp
-      @words << word
-
-      return word
     end
 
     def print_score(word)

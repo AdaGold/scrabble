@@ -5,7 +5,6 @@ module Scrabble
     def initialize
       @words = []
       @players = setup_players
-
     end
 
     def play
@@ -16,7 +15,7 @@ module Scrabble
           puts "It is #{player.name}'s turn"
           player_word = get_word_for player
           player_has_won = !player_word
-          
+
           if player_word
             print_score player_word
           end
@@ -73,14 +72,6 @@ module Scrabble
       else
         return false
       end
-    end
-
-    def get_word
-      puts "Enter a word to score:"
-      word = gets.chomp
-      @words << word
-
-      return word
     end
 
     def print_score(word)
