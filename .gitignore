@@ -9,6 +9,9 @@
 /test/version_tmp/
 /tmp/
 
+## SimpleCov
+/coverage/
+
 ## Specific to RubyMotion:
 .dat*
 .repl_history
