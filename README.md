@@ -15,6 +15,8 @@ From the project root, you should be able to execute all of your specs by runnin
 ### Tests
 We will use [minitest](https://github.com/seattlerb/minitest) for this project. This is the same test framework that we've used for your previous project. Your spec descriptions should be meaningful and organized into `describe` blocks that reflect your intent on how to use the code.
 
+To set up tests for your project, you will need to create a `Rakefile` and a `specs` directory. Use a Rakefile from an older project to create this Rakefile. It may be helpful to create a `spec_helper.rb` file. For reference, look back at our lecture on [using SimpleCov and creating spec helpers](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/code-coverage-and-simplecov.md).
+
 Do not move onto a new tier of requirements until the minimum requirements of the previous tier are complete and your specs are green across the board. Use __TDD__ to drive your development and document your edge cases.
 
 ### Pair Programming
