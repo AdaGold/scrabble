@@ -8,14 +8,19 @@ Use __Test Driven Development (TDD)__ to create a collection of Ruby classes tha
 - Utilize composition between classes, where appropriate
 
 ## Getting Started
-This is Level 2 pair project.
+This is [Stage 2](https://github.com/Ada-Developers-Academy/pedagogy/blob/master/rule-of-three.md) pair project.
 
 From the project root, you should be able to execute all of your specs by running `rake`. Each Ruby class should be in its own file in `lib/`, and the entire project should be in a `module` called `Scrabble`. You will need to use `require`, `require_relative`, `include` and/or `extend` to tell Ruby how to work with classes in multiple files.
 
 ### Tests
 We will use [minitest](https://github.com/seattlerb/minitest) for this project. This is the same test framework that we've used for your previous project. Your spec descriptions should be meaningful and organized into `describe` blocks that reflect your intent on how to use the code.
 
+To set up tests for your project, you will need to create a `Rakefile` and a `specs` directory. Use a Rakefile from an older project to create this Rakefile. It may be helpful to create a `spec_helper.rb` file. For reference, look back at our lecture on [using SimpleCov and creating spec helpers](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/code-coverage-and-simplecov.md).
+
 Do not move onto a new tier of requirements until the minimum requirements of the previous tier are complete and your specs are green across the board. Use __TDD__ to drive your development and document your edge cases.
+
+### What We Provide
+We have provided some boilerplate code for your Scrabble game, in `wave-1-game.rb`, `wave-2-game.rb`, and `wave-3-game.rb`. Running `$ ruby wave-1-game.rb` will begin a command-line game that uses your Scrabble code. The boilerplate code will break the first time you run it: working through the waves specified below should create a running version of the game. **Implementing code to make this game run is not a substitute for TDD or writing tests**. It is simply there for you and your pair to reference how the Game may run during each wave, to have better perspective of what your program can do, and to have exposure to legacy code. We fully expect you to create the specified classes below strictly through TDD.
 
 ### Pair Programming
 Utilize good pair programming practices. Refer to articles from the [Agile Alliance](http://guide.agilealliance.org/guide/pairing.html) and the [Agile Institute](http://powersoftwo.agileinstitute.com/2015/02/benefits-of-pair-programming-revisited.html) if you need a refresher for some best practices. Switch _driver_ and _navigator_ roles often. When there is uncertainity or confusion, step away from the keyboard and discuss, plan, and document on paper or whiteboard before continuing.
@@ -72,6 +77,7 @@ Create a `Scrabble::Player` class with a __minimum of 11 specs__. The only requi
     - Returns the score of the `word`
 - `#total_score`: Returns the sum of scores of played words
 - `#won?`: If the player has over 100 points, returns `true`, otherwise returns `false`
+    - This should be a private method
 - `#highest_scoring_word`: Returns the highest scoring played word
 - `#highest_word_score`: Returns the `highest_scoring_word` score
 
@@ -112,7 +118,9 @@ Create specs for (__minimum 2__) and add to the `Player` class the following ins
 
 - `#tiles` a collection of letters that the player can play (max 7)
 - `#draw_tiles(tile_bag)` fills tiles array until it has 7 letters from the given tile bag
+    - It is not in the primary requirements to modify the existing `#play(word)` to use `#tiles` or check against the player's tiles
 
 ### Optional Enhancements
+- Modify in `Player` the `#play(word)` method to only allow the player to play words using letters that the player has tiles for.
 - Create a `Scrabble::Dictionary` class that includes a method (class or instance) for searching a list of words to determine if a given word is valid (__minimum of 5 specs__).
 - Create a `Scrabble::Board` class (__minimum of 15 specs__) that has a matrix (array of arrays) of tile places. Check if a word can be played on a given tile place in a certain direction (up/down or left/right).
