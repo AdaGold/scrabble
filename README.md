@@ -21,6 +21,7 @@ Do not move onto a new tier of requirements until the minimum requirements of th
 
 ### What We Provide
 We have provided some boilerplate code for your Scrabble game, in `wave-1-game.rb`, `wave-2-game.rb`, and `wave-3-game.rb`. Running `$ ruby wave-1-game.rb` will begin a command-line game that uses your Scrabble code. The boilerplate code will break the first time you run it: working through the waves specified below should create a running version of the game. **Implementing code to make this game run is not a substitute for TDD or writing tests**. It is simply there for you and your pair to reference how the Game may run during each wave, to have better perspective of what your program can do, and to have exposure to legacy code. We fully expect you to create the specified classes below strictly through TDD.
+It is possible to implement a valid solution to this project that does not run the game.rb files.
 
 ### Pair Programming
 Utilize good pair programming practices. Refer to articles from the [Agile Alliance](http://guide.agilealliance.org/guide/pairing.html) and the [Agile Institute](http://powersoftwo.agileinstitute.com/2015/02/benefits-of-pair-programming-revisited.html) if you need a refresher for some best practices. Switch _driver_ and _navigator_ roles often. When there is uncertainity or confusion, step away from the keyboard and discuss, plan, and document on paper or whiteboard before continuing.
@@ -66,6 +67,11 @@ Create a `Scrabble::Scoring` class with a __minimum of 8 specs__. The class shou
     - There is a bonus for words that are seven letters. If the top score is tied between multiple words and one used all seven letters, choose the one with seven letters over the one with fewer tiles.
     - If the there are multiple words that are the same score and same length, pick the first one in the supplied list.
 
+### Wave 1 Comprehension Questions
+These comprehension questions are optional, and do not need to be answered/submitted with the project. They are simply here to help you check for understanding after each wave.
+- How did writing tests help you approach writing the scoring logic?
+- How did you choose to relate letters to their point value? Why did you choose that way? What other ways could you have related letters to their point value, and what would the advantages and disadvantages to those approaches be?
+
 <!--
 ## Wave 2
 ### Primary Requirements
@@ -87,13 +93,17 @@ For example,
 player = Scrabble::Player.new("Ada")
 player.name #=> "Ada"
 ```
+
+### Wave 2 Comprehension Questions
+These comprehension questions are optional, and do not need to be answered/submitted with the project. They are simply here to help you check for understanding after each wave.
+- What kinds of edge cases did you test for in Scoring and Player behavior?
 -->
 
 <!--
 ## Wave 3
 ### Primary Requirements
 #### `TileBag`
-Create a `Scrabble::TileBag` class with a __minimum of 5 specs__. It should have the following class and instance methods:
+Create a `Scrabble::TileBag` class with a __minimum of 5 specs__. It should have the following class or instance methods:
 
 - `#initialize` Should set up the instance with a collection of all default tiles
 - `#draw_tiles(num)` returns a collection of random tiles, removes the tiles from the default set
@@ -128,4 +138,7 @@ Create specs for (__minimum 2__) and add to the `Player` class the following ins
 - Create a `Scrabble::Dictionary` class that includes a method (class or instance) for searching a list of words to determine if a given word is valid (__minimum of 5 specs__).
 - Create a `Scrabble::Board` class (__minimum of 15 specs__) that has a matrix (array of arrays) of tile places. Check if a word can be played on a given tile place in a certain direction (up/down or left/right).
 
+### Wave 3 Comprehension Questions
+These comprehension questions are optional, and do not need to be answered/submitted with the project. They are simply here to help you check for understanding after each wave.
+- How do the `Scoring`, `Player`, and `TileBag` classes relate to each other?
 -->
