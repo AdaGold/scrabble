@@ -72,7 +72,6 @@ These comprehension questions are optional, and do not need to be answered/submi
 - How did writing tests help you approach writing the scoring logic?
 - How did you choose to relate letters to their point value? Why did you choose that way? What other ways could you have related letters to their point value, and what would the advantages and disadvantages to those approaches be?
 
-<!--
 ## Wave 2
 ### Primary Requirements
 Create a `Scrabble::Player` class with a __minimum of 11 specs__. The only required parameter for instances of the class is the player's `name`. Instances of the class should repond to the following messages (note, this does not necessarily mean that each of these need to be written as _new methods_):
@@ -97,7 +96,6 @@ player.name #=> "Ada"
 ### Wave 2 Comprehension Questions
 These comprehension questions are optional, and do not need to be answered/submitted with the project. They are simply here to help you check for understanding after each wave.
 - What kinds of edge cases did you test for in Scoring and Player behavior?
--->
 
 <!--
 ## Wave 3
