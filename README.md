@@ -97,7 +97,7 @@ player.name #=> "Ada"
 These comprehension questions are optional, and do not need to be answered/submitted with the project. They are simply here to help you check for understanding after each wave.
 - What kinds of edge cases did you test for in Scoring and Player behavior?
 
-<!--
+
 ## Wave 3
 ### Primary Requirements
 #### `TileBag`
@@ -139,4 +139,4 @@ Create specs for (__minimum 2__) and add to the `Player` class the following ins
 ### Wave 3 Comprehension Questions
 These comprehension questions are optional, and do not need to be answered/submitted with the project. They are simply here to help you check for understanding after each wave.
 - How do the `Scoring`, `Player`, and `TileBag` classes relate to each other?
--->
+
