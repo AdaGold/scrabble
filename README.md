@@ -61,7 +61,7 @@ Create a `Scrabble::Scoring` class with __full unit testing/specs__. You should 
 
 - `self.score(word)`: returns the total score for the given word. The word is input as a string (case insensitive). The chart in the baseline requirements shows the point value for a given letter.
   - A seven letter word means that a player used all the tiles. Seven letter words receive a __50__ point bonus.
-- `self.highest_score_from(array_of_words)`: returns **the word in the array with the highest score**. In the case of tie, use these tiebreaking rules:
+- `self.highest_score_from_array(array_of_words)`: returns **the word in the array with the highest score**. In the case of tie, use these tiebreaking rules:
     - It’s better to use fewer tiles, in the case of a tie, prefer the word with the fewest letters.
     - There is a bonus for words that are seven letters. If the top score is tied between multiple words and one used all seven letters, choose the one with seven letters over the one with fewer tiles.
     - If the there are multiple words that are the same score and same length, pick the first one in the supplied list.
