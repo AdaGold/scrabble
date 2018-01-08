@@ -57,7 +57,7 @@ First, come up with a "plan of action" for how you want to work as a pair. Discu
 
 ## Wave 1
 ### Primary Requirements
-Create a `Scrabble::Scoring` class with a __minimum of 8 specs__. The class should have the following **class methods**:
+Create a `Scrabble::Scoring` class with __full unit testing/specs__. You should have a spec that tests all pieces of functionality and logic. The class should have the following **class methods**:
 
 - `self.score(word)`: returns the total score for the given word. The word is input as a string (case insensitive). The chart in the baseline requirements shows the point value for a given letter.
   - A seven letter word means that a player used all the tiles. Seven letter words receive a __50__ point bonus.
@@ -68,7 +68,7 @@ Create a `Scrabble::Scoring` class with a __minimum of 8 specs__. The class shou
 
 ## Wave 2
 ### Primary Requirements
-Create a `Scrabble::Player` class with a __minimum of 11 specs__. The only required parameter for instances of the class is the player's `name`. Instances of the class should repond to the following messages (note, this does not necessarily mean that each of these need to be written as _new methods_):
+Create a `Scrabble::Player` class with __full unit testing/specs__. You should have a spec that tests all pieces of functionality and logic. The only required parameter for instances of the class is the player's `name`. Instances of the class should repond to the following messages (note, this does not necessarily mean that each of these need to be written as _new methods_):
 
 - `#name`: returns the value of the `@name` instance variable
 - `#plays`: returns an Array of the words played by the player
@@ -90,7 +90,7 @@ player.name #=> "Ada"
 ## Wave 3
 ### Primary Requirements
 #### `TileBag`
-Create a `Scrabble::TileBag` class with a __minimum of 5 specs__. It should have the following class and instance methods:
+Create a `Scrabble::TileBag` class with __full unit testing/specs__. You should have a spec that tests all pieces of functionality and logic. It should have the following class and instance methods:
 
 - `#initialize` Should set up the instance with a collection of all default tiles
 - `#draw_tiles(num)` returns a collection of random tiles, removes the tiles from the default set
@@ -114,7 +114,7 @@ Create a `Scrabble::TileBag` class with a __minimum of 5 specs__. It should have
 | M : 2  | Z : 1 |
 
 #### Modifications to `Player`
-Create specs for (__minimum 2__) and add to the `Player` class the following instance methods:
+Create specs for and add to the `Player` class the following instance methods:
 
 - `#tiles` a collection of letters that the player can play (max 7)
 - `#draw_tiles(tile_bag)` fills tiles array until it has 7 letters from the given tile bag
@@ -122,5 +122,5 @@ Create specs for (__minimum 2__) and add to the `Player` class the following ins
 
 ### Optional Enhancements
 - Modify in `Player` the `#play(word)` method to only allow the player to play words using letters that the player has tiles for.
-- Create a `Scrabble::Dictionary` class that includes a method (class or instance) for searching a list of words to determine if a given word is valid (__minimum of 5 specs__).
-- Create a `Scrabble::Board` class (__minimum of 15 specs__) that has a matrix (array of arrays) of tile places. Check if a word can be played on a given tile place in a certain direction (up/down or left/right).
+- Create a `Scrabble::Dictionary` class that includes a method (class or instance) for searching a list of words to determine if a given word is valid (__must have tests__).
+- Create a `Scrabble::Board` class (__must have tests__) that has a matrix (array of arrays) of tile places. Check if a word can be played on a given tile place in a certain direction (up/down or left/right).
