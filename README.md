@@ -77,7 +77,6 @@ Create a `Scrabble::Player` class with __full unit testing/specs__. You should h
     - Returns the score of the `word`
 - `#total_score`: Returns the sum of scores of played words
 - `#won?`: If the player has over 100 points, returns `true`, otherwise returns `false`
-    - This should be a private method
 - `#highest_scoring_word`: Returns the highest scoring played word
 - `#highest_word_score`: Returns the `highest_scoring_word` score
 
