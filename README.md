@@ -1,10 +1,13 @@
 # Scrabble
-Use __Test Driven Development (TDD)__ to create a collection of Ruby classes that would provide the foundation for creating a scrabble game.  **In this project we will NOT create a full Scrabble game.**
+
+Our project manager just informed us of our next large project: we need to make the foundation code for a game of Scrabble.
+
+Use __Test Driven Development (TDD)__ to create a collection of Ruby classes that would provide the foundation for creating a Scrabble game.  **In this project we will NOT create a full Scrabble game.** Another team of developers will create the program that runs a Scrabble game and finish the game logic.
 
 ### Learning Goals
 - Use __Test Driven Development (TDD)__ to write tests and code in parallel
 - Create class and instance methods according to requirements
-- Utilize Single Responsibility Principle to reduce code dependencies
+- Utilize [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) to reduce code dependencies
 - Utilize composition between classes, where appropriate
 
 ## Getting Started
@@ -15,7 +18,7 @@ From the project root, you should be able to execute all of your specs by runnin
 ### Tests
 We will use [minitest](https://github.com/seattlerb/minitest) for this project. This is the same test framework that we've used for your previous project. Your spec descriptions should be meaningful and organized into `describe` blocks that reflect your intent on how to use the code.
 
-To set up tests for your project, you will need to create a `Rakefile` and a `specs` directory. Use a Rakefile from an older project to create this Rakefile. It may be helpful to create a `spec_helper.rb` file. For reference, look back at our lecture on [using SimpleCov and creating spec helpers](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/code-coverage-and-simplecov.md).
+To set up tests for your project, you will need to create a `Rakefile` and a `specs` directory. Use a Rakefile from an older project to create this Rakefile.
 
 Do not move onto a new tier of requirements until the minimum requirements of the previous tier are complete and your specs are green across the board. Use __TDD__ to drive your development and document your edge cases.
 
@@ -32,7 +35,7 @@ Utilize good pair programming practices. Refer to articles from the [Agile Allia
 1. Add the other person in the pair (who didn't fork) to the forked repo as a _collaborator_. Instructions [here](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/).
 1. Both individuals will clone the forked repo: `$ git clone [YOUR FORKED REPO URL]`
 1. Both individuals `cd` into the dir created.
-1. Both individuals install needed tools via Terminal: `$ gem install simplecov`
+<!-- 1. Both individuals install needed tools via Terminal: `$ gem install simplecov` -->
 
 ### Requirements
 #### Pair Plan
@@ -123,3 +126,7 @@ Create specs for and add to the `Player` class the following instance methods:
 - Modify in `Player` the `#play(word)` method to only allow the player to play words using letters that the player has tiles for.
 - Create a `Scrabble::Dictionary` class that includes a method (class or instance) for searching a list of words to determine if a given word is valid (__must have tests__).
 - Create a `Scrabble::Board` class (__must have tests__) that has a matrix (array of arrays) of tile places. Check if a word can be played on a given tile place in a certain direction (up/down or left/right).
+<!-- - It may be helpful to create a `spec_helper.rb` file. For reference, refer to our lecture on [using SimpleCov and creating spec helpers](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/code-coverage-and-simplecov.md). -->
+
+## What Instructors Are Looking For
+Check out the [feedback template](feedback.md) which lists the items instructors will be looking for as they evaluate your project.
