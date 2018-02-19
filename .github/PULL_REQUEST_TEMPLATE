@@ -5,9 +5,8 @@ Congratulations! You're submitting your assignment.
 
 Feature | Feedback
 --- | ---
-How do you feel you and your partner did in sharing responsibilities? | 
-Why do you think we chose to make the `score` method in the `Scoring` class a **class method** instead of an **instance method**? | 
-Describe an example of a test you wrote for a _nominal case_. | 
+How do you feel you and your partner did in sharing responsibilities? |
+Why do you think we chose to make the `score` method in the `Scoring` class a **class method** instead of an **instance method**? |
+Describe an example of a test you wrote for a _nominal case_. |
 Describe an example of a test you wrote for an _edge case_. | 
-What was your final test coverage percentage? | 
-Is there a specific piece of code you'd like feedback on? | 
+Is there a specific piece of code you'd like feedback on? |
