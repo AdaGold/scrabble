@@ -5,8 +5,10 @@ Congratulations! You're submitting your assignment.
 
 Feature | Feedback
 --- | ---
-How do you feel you and your partner did in sharing responsibilities? |
+What are the advantages of using git when collaboratively working on one code base? |
 Why do you think we chose to make the `score` method in the `Scoring` class a **class method** instead of an **instance method**? |
 Describe an example of a test you wrote for a _nominal case_. |
-Describe an example of a test you wrote for an _edge case_. | 
+Describe an example of a test you wrote for an _edge case_. |
+Does your code use any methods from the `Enumerable` mixin? If so, where and why was it helpful? |
+What was one method you and your pair used to debug code? |
 Is there a specific piece of code you'd like feedback on? |
