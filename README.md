@@ -14,7 +14,7 @@ Use __Test Driven Development (TDD)__ to create a collection of Ruby classes tha
 
 ### Learning Goals
 - Use __Test Driven Development (TDD)__ to write tests and code in parallel
-- Create classes methods according to requirements
+- Create class methods according to requirements
 - Utilize [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) to reduce code dependencies
 - Utilize composition between classes
 
