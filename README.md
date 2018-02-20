@@ -82,7 +82,7 @@ Complete the `Scrabble::Scoring` class with __full unit testing/specs__. All pro
     - If the there are multiple words that are the same score and same length, pick the first one in the supplied list.
     - Tests for this logic are _stubbed_, meaning the test has a name but no code written. You will have to implement them as you work on this method.
 
-## Wave 2
+<!-- ## Wave 2
 ### Primary Requirements
 For waves 2 and 3, you are given no starter code. You and your pair will have to create all files and classes and write all the tests yourselves.
 
@@ -149,7 +149,7 @@ These need to be tested too!
 - Modify in `Player` the `#play(word)` method to only allow the player to play words using letters that the player has tiles for.
 - Create a `Scrabble::Dictionary` class that includes a method (class or instance) for searching a list of words to determine if a given word is valid (__must have tests__).
 - Create a `Scrabble::Board` class (__must have tests__) that has a matrix (array of arrays) of tile places. Check if a word can be played on a given tile place in a certain direction (up/down or left/right).
-<!-- - It may be helpful to create a `spec_helper.rb` file. For reference, refer to our lecture on [using SimpleCov and creating spec helpers](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/code-coverage-and-simplecov.md). -->
+-->
 
 ## What Instructors Are Looking For
 Check out the [feedback template](feedback.md) which lists the items instructors will be looking for as they evaluate your project.
