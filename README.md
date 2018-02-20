@@ -4,7 +4,7 @@
 
 - Practice TDD and organizing complex code by building some of the logic for a Scrabble game
 - [Stage 2](https://github.com/Ada-Developers-Academy/pedagogy/blob/master/rule-of-three.md) pair project
-- Due **DATE HERE**
+- Due end of class, Fri Feb 23
 
 ## Introduction
 
