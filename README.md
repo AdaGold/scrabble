@@ -110,7 +110,7 @@ player.play('lizard') # => 16
 puts player.highest_scoring_word
 # prints out "lizard"
 ```
-<!--
+
 ## Wave 3
 ### Primary Requirements
 #### `TileBag`
@@ -149,7 +149,7 @@ These need to be tested too!
 - Modify in `Player` the `#play(word)` method to only allow the player to play words using letters that the player has tiles for.
 - Create a `Scrabble::Dictionary` class that includes a method (class or instance) for searching a list of words to determine if a given word is valid (__must have tests__).
 - Create a `Scrabble::Board` class (__must have tests__) that has a matrix (array of arrays) of tile places. Check if a word can be played on a given tile place in a certain direction (up/down or left/right).
--->
+<!-- -->
 
 ## What Instructors Are Looking For
 Check out the [feedback template](feedback.md) which lists the items instructors will be looking for as they evaluate your project.
