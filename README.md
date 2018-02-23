@@ -4,7 +4,7 @@
 
 - Practice TDD and organizing complex code by building some of the logic for a Scrabble game
 - [Stage 2](https://github.com/Ada-Developers-Academy/pedagogy/blob/master/rule-of-three.md) pair project
-- Due **DATE HERE**
+- Due end of class, Fri Feb 23
 
 ## Introduction
 
@@ -149,7 +149,7 @@ These need to be tested too!
 - Modify in `Player` the `#play(word)` method to only allow the player to play words using letters that the player has tiles for.
 - Create a `Scrabble::Dictionary` class that includes a method (class or instance) for searching a list of words to determine if a given word is valid (__must have tests__).
 - Create a `Scrabble::Board` class (__must have tests__) that has a matrix (array of arrays) of tile places. Check if a word can be played on a given tile place in a certain direction (up/down or left/right).
-<!-- - It may be helpful to create a `spec_helper.rb` file. For reference, refer to our lecture on [using SimpleCov and creating spec helpers](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/code-coverage-and-simplecov.md). -->
+<!-- -->
 
 ## What Instructors Are Looking For
 Check out the [feedback template](feedback.md) which lists the items instructors will be looking for as they evaluate your project.
