@@ -81,6 +81,7 @@ Complete the `Scrabble::Scoring` class with __full unit testing/specs__. All pro
     - There is a bonus for words that are seven letters. If the top score is tied between multiple words and one used all seven letters, choose the one with seven letters over the one with fewer tiles.
     - If the there are multiple words that are the same score and same length, pick the first one in the supplied list.
     - Tests for this logic are _stubbed_, meaning the test has a name but no code written. You will have to implement them as you work on this method.
+    - Ensure that `self.highest_score_from(array_of_words)` works correctly regardless of the order of the words. Write a test for this case
 
 ## Wave 2
 ### Primary Requirements
