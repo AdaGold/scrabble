@@ -20,14 +20,14 @@ Use __Test Driven Development (TDD)__ to create a collection of Ruby classes tha
 
 ## Getting Started
 
-From the project root, you should be able to execute all of your specs by running `rake`. Each Ruby class should be in its own file in `lib/`, and the entire project should be in a `module` called `Scrabble`. You will need to use `require_relative` to tell Ruby how to work with classes in multiple files.
+From the project root, you should be able to execute all of your tests by running `rake`. Each Ruby class should be in its own file in `lib/`, and the entire project should be in a `module` called `Scrabble`. You will need to use `require_relative` to tell Ruby how to work with classes in multiple files.
 
 ### Tests
-We will use [minitest](https://github.com/seattlerb/minitest) for this project. This is the same test framework that we've used for your previous project. Your spec descriptions should be meaningful and organized into `describe` blocks that reflect your intent on how to use the code.
+We will use [minitest](https://github.com/seattlerb/minitest) for this project. This is the same test framework that we've used for your previous project. Your test descriptions should be meaningful and organized into `describe` blocks that reflect your intent on how to use the code.
 
-We have provided you with a `Rakefile` and some spec files to get you started.
+We have provided you with a `Rakefile` and some test files to get you started.
 
-Do not move onto a new tier of requirements until the minimum requirements of the previous tier are complete and your specs are green across the board. Use __TDD__ to drive your development and document your edge cases.
+Do not move onto a new tier of requirements until the minimum requirements of the previous tier are complete and your tests are green across the board. Use __TDD__ to drive your development and document your edge cases.
 
 ### Driver Code
 We have provided some driver code for your Scrabble game in the files `wave-1-game.rb`, `wave-2-game.rb`, and `wave-3-game.rb`. Running `$ ruby wave-1-game.rb` will begin a command-line game that uses your Scrabble code. The boilerplate code will break the first time you run it: working through the waves specified below should create a running version of the game. **Implementing code to make this game run is not a substitute for TDD or writing tests**. It is simply there for you and your pair to reference how the Game may run during each wave, to have better perspective of what your program can do, and to get some practice reading other peoples' code. We fully expect you to create the specified classes below strictly through TDD.
@@ -53,7 +53,7 @@ First, come up with a "plan of action" for how you want to work as a pair. Discu
     - A `Scrabble` module
     - A `Scrabble::Scoring` **class**
 - Add some sort of data structure to `Scrabble::Scoring` to store the **individual letter scores** listed below
-- Read through the spec file `specs/scoring_spec.rb`, which corresponds to your `Scrabble::Scoring` class. This file has some tests pre-written and some test stubs that you will need to fill in.
+- Read through the test file `test/scoring_test.rb`, which corresponds to your `Scrabble::Scoring` class. This file has some tests pre-written and some test stubs that you will need to fill in.
 - Be able to execute the tests using `rake` from the project root.
 
 #### Score chart
@@ -69,9 +69,9 @@ First, come up with a "plan of action" for how you want to work as a pair. Discu
 
 ## Wave 1
 ### Primary Requirements
-For wave 1 you are given some scaffolding: tests and test stubs in `specs/scoring_spec.rb`, and method stubs in `lib/scoring.rb`.
+For wave 1 you are given some scaffolding: tests and test stubs in `test/scoring_test.rb`, and method stubs in `lib/scoring.rb`.
 
-Complete the `Scrabble::Scoring` class with __full unit testing/specs__. All provided tests should pass, and all stubbed tests should be fully implemented (and pass). The class should have the following **class methods**:
+Complete the `Scrabble::Scoring` class with __full unit testing/tests__. All provided tests should pass, and all stubbed tests should be fully implemented (and pass). The class should have the following **class methods**:
 
 - `self.score(word)`: returns the total score for the given word. The word is input as a string (case insensitive). The chart in the baseline requirements shows the point value for a given letter.
     - A seven letter word means that a player used all the tiles. Seven letter words receive a __50__ point bonus.
@@ -87,7 +87,7 @@ Complete the `Scrabble::Scoring` class with __full unit testing/specs__. All pro
 ### Primary Requirements
 For waves 2 and 3, you are given no starter code. You and your pair will have to create all files and classes and write all the tests yourselves.
 
-Create a `Scrabble::Player` class with __full unit testing/specs__. You should have a spec that tests all pieces of functionality and logic.
+Create a `Scrabble::Player` class with __full unit testing/tests__. You should have a test that tests all pieces of functionality and logic.
 
 The constructor for `Scrabble::Player` should take exactly one argument: the player's `name`. Instances of the class should respond to the following messages:
 
@@ -115,7 +115,7 @@ puts player.highest_scoring_word
 ## Wave 3
 ### Primary Requirements
 #### `TileBag`
-Create a `Scrabble::TileBag` class with __full unit testing/specs__. You should have a spec that tests all pieces of functionality and logic. It should have the following class and instance methods:
+Create a `Scrabble::TileBag` class with __full unit testing__. You should have a test that tests all pieces of functionality and logic. It should have the following class and instance methods:
 
 - `#initialize` Should set up the instance with a collection of all default tiles
 - `#draw_tiles(num)` returns a collection of random tiles, removes the tiles from the default set
@@ -139,7 +139,7 @@ Create a `Scrabble::TileBag` class with __full unit testing/specs__. You should 
 | M : 2  | Z : 1 |
 
 #### Modifications to `Player`
-Create specs for and add to the `Player` class the following instance methods:
+Create tests for and add to the `Player` class the following instance methods:
 
 - `#tiles` a collection of letters that the player can play (max 7)
 - `#draw_tiles(tile_bag)` fills tiles array until it has 7 letters from the given tile bag
@@ -150,7 +150,7 @@ These need to be tested too!
 - Modify in `Player` the `#play(word)` method to only allow the player to play words using letters that the player has tiles for.
 - Create a `Scrabble::Dictionary` class that includes a method (class or instance) for searching a list of words to determine if a given word is valid (__must have tests__).
 - Create a `Scrabble::Board` class (__must have tests__) that has a matrix (array of arrays) of tile places. Check if a word can be played on a given tile place in a certain direction (up/down or left/right).
-<!-- - It may be helpful to create a `spec_helper.rb` file. For reference, refer to our lecture on [using SimpleCov and creating spec helpers](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/code-coverage-and-simplecov.md). -->
+<!-- - It may be helpful to create a `test_helper.rb` file. For reference, refer to our lecture on [using SimpleCov and creating test helpers](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/code-coverage-and-simplecov.md). -->
 
 ## What Instructors Are Looking For
 Check out the [feedback template](feedback.md) which lists the items instructors will be looking for as they evaluate your project.
